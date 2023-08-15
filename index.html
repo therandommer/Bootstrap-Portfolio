@@ -7,7 +7,7 @@
     <!--Including bootstrap here-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Isabella Clark // Web Developer</title>
 </head>
 
@@ -23,16 +23,17 @@
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+                    <!--Buttons link to relevant sections on the page.-->
                     <div class="collapse navbar-collapse" id="navbarResponsive">
                         <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">About Me</a>
+                                <a class="nav-link active" aria-current="page" href="#welcome">About Me</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">My Projects</a>
+                                <a class="nav-link" href="#projects">My Projects</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
+                                <a class="nav-link" href="#contact">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -42,114 +43,145 @@
     </section>
 
     <!--Welcome section-->
-    <section class="py-5 text-center container">
+
+    <section class="py-5 text-center container" id="welcome">
         <div class="row py-lg-5">
             <div class="col-lg-6 col-md-8 mx-auto">
                 <h1 class="fw-light">About Me</h1>
-                <p class="lead text-muted">Something short and leading about the collection below—its contents, the
-                    creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it
-                    entirely.</p>
+                <p class="lead text-muted">Hi! I'm Isabella, I'm studying to become a web developer so this website,
+                    showcases some of the things I can do!
+                    I previously studied games programming, so some of my projects I will list were from my time doing
+                    that!
+                    I used to work in a charity and run their social media accounts, pictured below is me and a
+                    coworker (at the time) posing for a valentines day post to help share the love! 😊</p>
                 <p>
-                    <a href="#" class="btn btn-primary my-2">View my projects!</a>
-                    <a href="#" class="btn btn-secondary my-2">Contact me!</a>
+                    <a href="#projects" class="btn btn-primary my-2">View my projects!</a>
+                    <a href="#contact" class="btn btn-secondary my-2">Contact me!</a>
                 </p>
+               
+            </div>
+            <div class="col-lg-6 col-md-4 mx-auto">
+                <img src="images/valentines.jpg" alt="">
+            </div>
+        </div>
+        
+    </section>
+    <!--Projects section-->
+    <section id="projects">
+        <!--Centers and makes the text for the projects heading bold.-->
+        <div class="container">
+            <h2 class="text-center fw-bold">Projects</h2>
+        </div>
+        <div class="album py-5 bg-light">
+            <div class="col">
+                <!--Bigger card for the highlighted project-->
+                <div class="container">
+                    <div class="card shadow-sm">
+                        <!--Double the height of the other cards to help the card stand out more-->
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="450"
+                            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                                dy=".3em">Highlight Project video</text>
+                        </svg>
+
+                        <div class="card-body">
+                            <p class="card-text">Highlighted project text body</p>
+                            <small class="text-muted">Year of project: 2021</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 g-4">
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                                    dy=".3em">Project 1</text>
+                            </svg>
+
+                            <div class="card-body">
+                                <p class="card-text">Project 1 body</p>
+                                <small class="text-muted">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                                    dy=".3em">Project 2</text>
+                            </svg>
+
+                            <div class="card-body">
+                                <p class="card-text">Project 2 body.</p>
+                                <small class="text-muted">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                                    dy=".3em">Project 3</text>
+                            </svg>
+
+                            <div class="card-body">
+                                <p class="card-text">Project 3 body</p>
+                                <small class="text-muted">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                                    dy=".3em">Project 4</text>
+                            </svg>
+
+                            <div class="card-body">
+                                <p class="card-text">Project 4 body</p>
+                                <small class="text-muted">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <!--Projects section-->
-    <div class="album py-5 bg-light">
-        <div class="col">
-            <!--Bigger card for the highlighted project-->
-            <div class="container">
-                <div class="card shadow-sm">
-                    <!--Double the height of the other cards to help the card stand out more-->
-                    <svg class="bd-placeholder-img card-img-top" width="100%" height="450"
-                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                        preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                            dy=".3em">Highlight Project video</text>
-                    </svg>
-
-                    <div class="card-body">
-                        <p class="card-text">Highlighted project text body</p>
-                        <small class="text-muted">Year of project: 2021</small>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 g-4">
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                            preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <title>Placeholder</title>
-                            <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                                dy=".3em">Project 1</text>
-                        </svg>
-
-                        <div class="card-body">
-                            <p class="card-text">Project 1 body</p>
-                            <small class="text-muted">9 mins</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                            preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <title>Placeholder</title>
-                            <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                                dy=".3em">Project 2</text>
-                        </svg>
-
-                        <div class="card-body">
-                            <p class="card-text">Project 2 body.</p>
-                            <small class="text-muted">9 mins</small>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                            preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <title>Placeholder</title>
-                            <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                                dy=".3em">Project 3</text>
-                        </svg>
-
-                        <div class="card-body">
-                            <p class="card-text">Project 3 body</p>
-                            <small class="text-muted">9 mins</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                            preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <title>Placeholder</title>
-                            <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                                dy=".3em">Project 4</text>
-                        </svg>
-
-                        <div class="card-body">
-                            <p class="card-text">Project 4 body</p>
-                            <small class="text-muted">9 mins</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <!--Contact section-->
+    <section id="contact">
+        <div class="container">
+            <h2 class="text-center fw-bold">Contact me</h2>
+        </div>
+        <div class="container">
+            <p class="text-center">If you would like to get in touch, please reach me via the following methods:</p>
+            <div class="row">
+                <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 ">
+                    <!-- Can add whatever phone number here -->
+                    <a class="text-center" href="tel:+4475353333333">📞 Phone me!</a>
+                    <!-- Will mail selected email address -->
+                    <a class="text-center" href="mailto:testemail@gmail.com">📧 Email me!</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!--Including bootstrap functionality here-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
