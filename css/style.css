@@ -5,3 +5,6 @@
 #welcome img{
     height: 20%;
 }
+hr.solid{
+    border-top: 3px solid black;
+}
