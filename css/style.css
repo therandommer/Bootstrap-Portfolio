@@ -1,11 +1,67 @@
-#welcome{
+:root {
+    /** Font sizes for use throughout the document */
+
+    /* Header Font Sizes */
+    --heading1FontSize: 60px;
+    --heading2FontSize: 32px;
+    --heading3FontSize: 26px;
+    --heading4FontSize: 24px;
+    --heading5FontSize: 20px;
+    --heading6FontSize: 18px;
+
+    /* Main Body Font Sizes */
+    --paragraphFontSize: 16px;
+    --smallerFontSize: 12px;
+    --tinyFontSize: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 1;
+}
+
+h1 {
+    font-size: var(--heading1FontSize);
+}
+
+h2 {
+    font-size: var(--heading2FontSize);
+}
+
+h3 {
+    font-size: var(--heading3FontSize);
+}
+
+h4 {
+    font-size: var(--heading4FontSize);
+}
+
+h5 {
+    font-size: var(--heading5FontSize);
+}
+
+h6 {
+    font-size: var(--heading6FontSize);
+}
+
+p {
+    font-size: var(--paragraphFontSize);
+}
+
+#welcome {
     padding-top: 50px;
     max-height: 500px;
 }
-#welcome img{
+
+#welcome img {
     height: 20%;
 }
+
 /*Styling to create the lines to segment the different sections of the website.*/
-hr.solid{
+hr.solid {
     border-top: 3px solid black;
 }
