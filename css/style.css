@@ -5,6 +5,7 @@
 #welcome img{
     height: 20%;
 }
+/*Styling to create the lines to segment the different sections of the website.*/
 hr.solid{
     border-top: 3px solid black;
 }
